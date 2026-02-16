@@ -1,43 +1,70 @@
-# Resume
+# Anvesh Reddy Yeruva — DevOps Portfolio & Resume
 
-# Anvesh Reddy Yeruva — DevOps Resume & Portfolio
+Senior DevOps Engineer specializing in cloud architecture, Kubernetes operations, Infrastructure as Code, and production reliability engineering.
 
-This repository hosts my public resume and portfolio page using **GitHub Pages**.
-
-## 🌐 Live Website
-**Portfolio / Resume:**  
-https://anveshyeruva.github.io/Profile/
-
-## 📄 Resume Download
-Direct PDF link:  
-https://anveshyeruva.github.io/Profile/Anvesh_Reddy_Yeruva_Resume.pdf
-
-## 💼 About Me
-DevOps Engineer with 7+ years of experience in IT systems and operations, focused on:
-- AWS cloud services and platform reliability  
-- Kubernetes deployments and troubleshooting  
-- Terraform / Ansible automation (Infrastructure as Code)  
-- CI/CD pipelines (Jenkins, GitHub Actions)  
-- Linux administration and production support  
-- Security-minded delivery (TLS/HTTPS, DNS, PKI awareness, NIST-aligned controls)
-
-## 🛠 Tech Stack
-- **Cloud:** AWS (EC2, IAM, VPC, S3, RDS, CloudWatch), Azure (exposure), GCP (exposure)  
-- **Containers:** Kubernetes, Docker  
-- **IaC / Automation:** Terraform, Ansible, Python, Bash  
-- **CI/CD:** Jenkins, GitHub Actions  
-- **Monitoring:** Grafana, ELK, Splunk, Datadog (based on project needs)  
-- **OS:** Linux
-
-## 📌 Repository Contents
-- `index.html` → Portfolio landing page  
-- `Anvesh_Reddy_Yeruva_Resume.pdf` → Resume file  
-- (Optional) Images or additional documents
-
-## 🔗 Links
-- LinkedIn: https://www.linkedin.com/in/yar-agfrewd/  
-- GitHub: https://github.com/anveshyeruva  
+This repository hosts my public resume and portfolio page powered by **GitHub Pages**.
 
 ---
 
-✅ Last updated: 2026
+## 🌐 Live Portfolio
+🔗 https://anveshyeruva.github.io/Profile/
+
+---
+
+## 📄 Resume
+Direct PDF download:  
+https://anveshyeruva.github.io/Profile/Anvesh_Reddy_Yeruva_Resume.pdf
+
+---
+
+## 🏅 Certifications
+- **AWS Certified Solutions Architect – Professional**
+- **Certified Kubernetes Administrator (CKA)**
+
+---
+
+## 💼 Professional Focus
+
+- Designing secure, multi-AZ AWS architectures
+- Kubernetes cluster lifecycle management and troubleshooting
+- Infrastructure as Code using Terraform (modular, drift-aware patterns)
+- CI/CD automation and deployment governance
+- Observability-driven reliability engineering
+- Security-first platform design aligned with enterprise controls
+
+---
+
+## 🛠 Core Technical Stack
+
+**Cloud & Architecture**
+- AWS (EC2, IAM, VPC, S3, RDS, CloudWatch, CloudTrail, KMS)
+
+**Containers & Orchestration**
+- Kubernetes (CKA), Docker
+
+**Infrastructure as Code**
+- Terraform, Ansible
+
+**CI/CD & Automation**
+- Jenkins, GitHub Actions
+- Python, Bash
+
+**Operating Systems**
+- Linux
+
+---
+
+## 📂 Repository Contents
+- `index.html` → Portfolio landing page
+- `Anvesh_Reddy_Yeruva_Resume.pdf` → Resume file
+- `og.png` → Open Graph preview image
+
+---
+
+## 🔗 Professional Links
+- LinkedIn: https://www.linkedin.com/in/yar-agfrewd/
+- Portfolio: https://anveshyeruva.github.io/Profile/
+
+---
+
+_Last updated: 2026_
