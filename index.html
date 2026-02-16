@@ -25,6 +25,7 @@
 }
 
 *{box-sizing:border-box;}
+
 body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
@@ -40,9 +41,7 @@ a{
   color:var(--accent);
   transition:0.2s ease;
 }
-a:hover{
-  opacity:0.85;
-}
+a:hover{opacity:0.85;}
 
 .wrap{
   max-width:1050px;
@@ -156,10 +155,7 @@ a:hover{
   box-shadow:0 30px 70px rgba(0,0,0,0.45);
 }
 
-.card h3{
-  margin-top:0;
-  margin-bottom:15px;
-}
+.fullWidth{grid-column:span 12;}
 
 .list{
   padding-left:18px;
@@ -167,11 +163,29 @@ a:hover{
   font-size:15px;
 }
 
-.fullWidth{
-  grid-column:span 12;
+/* CERTIFICATION BADGES */
+.certGrid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
-/* PROJECT CARDS */
+.certBadge{
+  flex:1;
+  min-width:280px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:20px;
+  background:rgba(255,255,255,0.03);
+  transition:0.3s ease;
+}
+
+.certBadge:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* PROJECT */
 .project{
   border:1px solid var(--line);
   border-radius:18px;
@@ -224,7 +238,7 @@ Designing resilient, secure, and scalable cloud systems with an architecture-fir
 
 <div class="metaRow">
 <span>AWS Architecture</span>
-<span>Kubernetes Cluster Operations</span>
+<span>Kubernetes Operations</span>
 <span>Terraform Infrastructure as Code</span>
 <span>CI/CD Automation</span>
 <span>Reliability Engineering</span>
@@ -241,7 +255,7 @@ Designing resilient, secure, and scalable cloud systems with an architecture-fir
 <h3>Professional Summary</h3>
 <p style="color:var(--muted);">
 Senior DevOps Engineer with 7+ years of experience designing and operating production-grade AWS cloud platforms.
-Hands-on expertise in Kubernetes administration, Infrastructure as Code, CI/CD automation, observability, and secure architecture patterns.
+Strong expertise in Kubernetes administration, Infrastructure as Code, CI/CD automation, observability, and secure architecture patterns.
 </p>
 </div>
 
@@ -249,7 +263,7 @@ Hands-on expertise in Kubernetes administration, Infrastructure as Code, CI/CD a
 <h3>Core Expertise</h3>
 <ul class="list">
 <li>Secure VPC design and IAM least privilege models</li>
-<li>Kubernetes lifecycle management and troubleshooting</li>
+<li>Kubernetes cluster lifecycle management and troubleshooting</li>
 <li>Reusable Terraform modules and drift control</li>
 <li>Deployment validation pipelines and rollback safety</li>
 <li>Monitoring, alerting, and incident response practices</li>
@@ -257,18 +271,38 @@ Hands-on expertise in Kubernetes administration, Infrastructure as Code, CI/CD a
 </div>
 
 <div class="fullWidth">
+<h3 style="margin-bottom:20px;">Certifications</h3>
+
+<div class="certGrid">
+<div class="certBadge">
+<strong>AWS Certified Solutions Architect – Professional</strong><br><br>
+Advanced-level certification validating secure, high-availability AWS architecture design and complex cloud solution expertise.
+<br><br>
+<a href="https://www.credly.com/badges/b47ba845-520a-493e-af03-5ddd982e7df5/linked_in_profile" target="_blank">View Credential</a>
+</div>
+
+<div class="certBadge">
+<strong>Certified Kubernetes Administrator (CKA)</strong><br><br>
+Hands-on Kubernetes certification demonstrating cluster operations, workload troubleshooting, and production-level orchestration expertise.
+<br><br>
+<a href="https://www.credly.com/badges/5088f426-dea2-415f-acc1-527f75d51d07" target="_blank">View Credential</a>
+</div>
+</div>
+</div>
+
+<div class="fullWidth">
 <h3 style="margin-bottom:20px;">Featured Projects</h3>
 
 <div class="project">
 <strong>MLOps QA Bug Severity Classifier</strong><br>
-End-to-end ML workflow with reproducible training, experiment tracking, and CI validation.<br>
-<a href="https://github.com/anveshyeruva/mlops-qa-bugseverity" target="_blank">View Project</a>
+End-to-end ML workflow with reproducible training, experiment tracking, and CI validation.
+<br><a href="https://github.com/anveshyeruva/mlops-qa-bugseverity" target="_blank">View Project</a>
 </div>
 
 <div class="project">
 <strong>Flask CI/CD Starter</strong><br>
-Containerized microservice with automated build, test, and deployment validation.<br>
-<a href="https://github.com/anveshyeruva/flask-cicd-starter" target="_blank">View Project</a>
+Containerized microservice with automated build, test, and deployment validation.
+<br><a href="https://github.com/anveshyeruva/flask-cicd-starter" target="_blank">View Project</a>
 </div>
 
 </div>
