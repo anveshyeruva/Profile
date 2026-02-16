@@ -4,22 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <meta name="description" content="Anvesh Reddy Yeruva - Senior DevOps Engineer | Cloud Platform Engineering | AWS, Azure | Kubernetes | Terraform | CI/CD | Linux | Observability | Security | Automation" />
+  <meta name="description" content="Anvesh Reddy Yeruva - Senior DevOps Engineer | AWS Solutions Architect Professional | Certified Kubernetes Administrator | Cloud Platform Engineering | Terraform | CI/CD | Observability | Security" />
 
-  <!-- Open Graph / LinkedIn Preview -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Anvesh Reddy Yeruva | DevOps Portfolio" />
-  <meta property="og:description" content="Senior DevOps Engineer | AWS, Azure | Kubernetes | Terraform | CI/CD | Linux | Observability | Security | Automation" />
+  <meta property="og:description" content="Senior DevOps Engineer | AWS SA Pro | CKA | Kubernetes | Terraform | CI/CD | Cloud Architecture" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://anveshyeruva.github.io/Profile/" />
   <meta property="og:image" content="https://anveshyeruva.github.io/Profile/og.png?v=20260202" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Anvesh Reddy Yeruva | DevOps Portfolio" />
-  <meta name="twitter:description" content="Senior DevOps Engineer | AWS, Azure | Kubernetes | Terraform | CI/CD | Linux | Observability | Security | Automation" />
-  <meta name="twitter:image" content="https://anveshyeruva.github.io/Profile/og.png?v=20260202" />
 
   <title>Anvesh Reddy Yeruva | DevOps Portfolio</title>
 
@@ -36,36 +28,17 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
     body{
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color: var(--text);
       background:
         radial-gradient(1200px 600px at 15% 10%, rgba(100, 120, 255, 0.25), transparent 60%),
         radial-gradient(900px 500px at 85% 20%, rgba(0, 210, 255, 0.16), transparent 60%),
-        radial-gradient(700px 500px at 50% 90%, rgba(255, 0, 170, 0.10), transparent 65%),
         var(--bg);
-      min-height: 100vh;
     }
 
     a { color: inherit; text-decoration: none; }
-    a:hover { opacity: 0.94; }
-
-    /* Accessibility */
-    .skip-link{
-      position:absolute;
-      left:-999px;
-      top:10px;
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background: rgba(0,0,0,0.55);
-      color: var(--text);
-      z-index:999;
-    }
-    .skip-link:focus{ left: 12px; outline: 3px solid var(--focus); }
 
     .wrap{
       max-width: 980px;
@@ -73,31 +46,18 @@
       padding: 28px 18px 60px;
     }
 
-    .topbar{
-      display:flex;
-      justify-content: space-between;
-      align-items:center;
-      gap: 14px;
-      margin-bottom: 22px;
-    }
-
     .badge{
-      display:inline-flex;
-      gap: 10px;
-      align-items:center;
-      padding: 10px 14px;
+      padding: 8px 14px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
+      background: rgba(255,255,255,0.05);
       border-radius: 999px;
       font-size: 13px;
       color: var(--muted);
-      backdrop-filter: blur(10px);
-      white-space: nowrap;
     }
 
     .container{
       border: 1px solid var(--line);
-      background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
+      background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       overflow: hidden;
@@ -105,118 +65,48 @@
 
     .hero{
       padding: 34px 28px;
-      display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
-      gap: 22px;
       border-bottom: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.05), transparent);
     }
 
     .name{
-      font-size: 34px;
-      line-height: 1.15;
+      font-size: 36px;
       margin: 0 0 10px;
-      letter-spacing: -0.6px;
     }
 
     .subtitle{
-      margin: 0 0 12px;
       color: var(--muted);
-      font-size: 15.5px;
-      max-width: 70ch;
+      font-size: 16px;
+      margin-bottom: 14px;
     }
 
     .metaRow{
       display:flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin: 10px 0 0;
-      color: rgba(255,255,255,0.78);
-      font-size: 13.5px;
+      margin: 10px 0 20px;
     }
+
     .metaRow span{
       padding: 6px 10px;
       border-radius: 999px;
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.03);
-    }
-
-    .ctaRow{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 18px;
+      font-size: 13px;
     }
 
     .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap: 8px;
-      padding: 12px 16px;
-      border-radius: 12px;
+      padding: 10px 14px;
+      border-radius: 10px;
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.06);
-      color: var(--text);
+      font-size: 14px;
       font-weight: 600;
-      font-size: 14px;
-      transition: transform 0.15s ease, background 0.15s ease;
-      backdrop-filter: blur(10px);
-      white-space: nowrap;
+      margin-right: 10px;
     }
-
-    .btn:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,0.10);
-    }
-
-    .btn:focus{
-      outline: 3px solid var(--focus);
-      outline-offset: 2px;
-    }
-
-    .btnPrimary{
-      border: 1px solid rgba(255,255,255,0.18);
-      background: linear-gradient(135deg, rgba(100, 120, 255, 0.30), rgba(0, 210, 255, 0.18));
-    }
-
-    .btnSmall{
-      padding: 10px 12px;
-      font-size: 13px;
-      border-radius: 12px;
-    }
-
-    .sideCard{
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-      border-radius: 16px;
-      height: fit-content;
-    }
-
-    .sideTitle{
-      margin: 0 0 10px;
-      font-size: 13px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .stat{
-      display:flex;
-      justify-content: space-between;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--line);
-      font-size: 14px;
-      gap: 10px;
-    }
-    .stat:last-child{ border-bottom: none; }
-    .stat span:first-child{ color: var(--muted); }
-    .stat span:last-child{ text-align: right; }
 
     .grid{
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      display:grid;
+      grid-template-columns: repeat(12,1fr);
       gap: 16px;
       padding: 22px 28px;
     }
@@ -224,341 +114,132 @@
     .card{
       grid-column: span 6;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
       border-radius: 16px;
       padding: 18px;
+      background: rgba(255,255,255,0.04);
     }
 
     .card h3{
-      margin: 0 0 10px;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-    }
-
-    .muted{ color: var(--muted); }
-
-    .chips{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .chip{
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      font-size: 13px;
-      color: rgba(255,255,255,0.85);
+      margin-top:0;
     }
 
     .list{
-      margin: 10px 0 0;
       padding-left: 18px;
-      color: rgba(255,255,255,0.84);
-      line-height: 1.65;
       font-size: 14px;
+      line-height: 1.6;
     }
 
-    /* Certifications */
     .certItem{
-      display:flex;
-      flex-direction: column;
-      gap: 10px;
-      padding-top: 8px;
+      margin-top: 14px;
     }
-    .certTop{
-      display:flex;
-      align-items:flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+
     .certName{
-      font-weight: 800;
-      font-size: 14.5px;
-      letter-spacing: -0.1px;
-      margin: 0;
-    }
-    .certMeta{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap: 6px;
-      padding: 6px 9px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      font-size: 12px;
-      color: rgba(255,255,255,0.82);
-      white-space: nowrap;
-    }
-
-    /* Projects */
-    .projects{ grid-column: span 12; }
-
-    .projGrid{
-      display:grid;
-      grid-template-columns: repeat(12,1fr);
-      gap: 14px;
-      margin-top: 12px;
-    }
-
-    .proj{
-      grid-column: span 6;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      border-radius: 16px;
-      padding: 14px;
-      transition: transform 0.15s ease, background 0.15s ease;
-    }
-    .proj:hover{
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.06);
-    }
-    .proj:focus{
-      outline: 3px solid var(--focus);
-      outline-offset: 2px;
-    }
-
-    .projTitle{
-      margin: 0 0 6px;
-      font-weight: 800;
-      font-size: 14.5px;
-      letter-spacing: -0.15px;
-    }
-    .projDesc{
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.55;
-    }
-    .projTags{
-      margin-top: 10px;
-      display:flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .tag{
-      font-size: 12px;
-      color: rgba(255,255,255,0.78);
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      padding: 6px 8px;
-      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
 
     .footer{
+      padding: 20px 28px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--muted);
       display:flex;
       justify-content: space-between;
-      align-items:center;
-      gap: 12px;
-      flex-wrap: wrap;
-      padding: 16px 28px 22px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .links{
-      display:flex;
-      gap: 14px;
       flex-wrap: wrap;
     }
 
     @media (max-width: 860px){
-      .hero{ grid-template-columns: 1fr; }
       .card{ grid-column: span 12; }
-      .proj{ grid-column: span 12; }
-      .wrap{ padding: 18px 14px 50px; }
-      .badge{ white-space: normal; }
     }
   </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
 
-  <div class="wrap">
-    <div class="topbar" aria-label="Top information bar">
-      <div class="badge">🚀 DevOps Portfolio • Resume</div>
-      <div class="badge">📍 United States • Open to roles</div>
-    </div>
+  <div class="badge">🚀 DevOps Portfolio • AWS SA Pro • CKA</div>
 
-    <div class="container">
-      <main id="main">
-        <section class="hero" aria-label="Intro section">
-          <div>
-            <h1 class="name">Anvesh Reddy Yeruva</h1>
-            <p class="subtitle">
-              Senior DevOps Engineer | Cloud Platform Engineering | AWS, Azure, GCP | Kubernetes | Terraform | CI/CD | Linux | Observability | Security | Automation
-            </p>
+  <div class="container">
 
-            <div class="metaRow" aria-label="Key highlights">
-              <span>7+ years DevOps</span>
-              <span>Multi-Cloud: AWS • Azure • GCP</span>
-              <span>Kubernetes / EKS</span>
-              <span>Terraform • CI/CD</span>
-              <span>Windows + Linux</span>
-            </div>
+    <section class="hero">
+      <h1 class="name">Anvesh Reddy Yeruva</h1>
 
-            <div class="ctaRow" aria-label="Primary actions">
-              <a class="btn btnPrimary" href="Anvesh_Reddy_Yeruva_Resume.pdf" target="_blank" rel="noopener">
-                📄 Download Resume (PDF)
-              </a>
-              <a class="btn" href="Anvesh_Reddy_Yeruva_Resume.pdf" target="_blank" rel="noopener">
-                👀 View Resume
-              </a>
-              <a class="btn" href="mailto:anvesh.yeruva@gmail.com">
-                ✉️ Email
-              </a>
-              <a class="btn" href="https://www.linkedin.com/in/yar-agfrewd/" target="_blank" rel="noopener">
-                🔗 LinkedIn
-              </a>
-              <a class="btn" href="https://github.com/anveshyeruva" target="_blank" rel="noopener">
-                💻 GitHub
-              </a>
-            </div>
+      <p class="subtitle">
+        Senior DevOps Engineer | AWS Solutions Architect – Professional |
+        Certified Kubernetes Administrator |
+        Cloud Platform Engineering | Terraform | CI/CD | Observability | Security
+      </p>
 
-            <div class="chips" style="margin-top:18px;" aria-label="Core skills">
-              <span class="chip">AWS</span>
-              <span class="chip">Azure</span>
-              <span class="chip">Terraform</span>
-              <span class="chip">CloudFormation</span>
-              <span class="chip">Azure ARM</span>
-              <span class="chip">Kubernetes</span>
-              <span class="chip">Docker</span>
-              <span class="chip">CI/CD</span>
-              <span class="chip">Linux</span>
-              <span class="chip">Windows</span>
-              <span class="chip">Observability</span>
-              <span class="chip">Security</span>
-            </div>
-          </div>
+      <div class="metaRow">
+        <span>7+ Years DevOps</span>
+        <span>AWS Architecture & Multi-AZ Design</span>
+        <span>Kubernetes Cluster Operations (CKA)</span>
+        <span>Infrastructure as Code – Terraform</span>
+        <span>CI/CD Automation</span>
+      </div>
 
-          <aside class="sideCard" aria-label="Quick stats">
-            <p class="sideTitle">Highlights</p>
-            <div class="stat"><span>Experience</span><span>7+ years</span></div>
-            <div class="stat"><span>Cloud</span><span>AWS • Azure • GCP</span></div>
-            <div class="stat"><span>Containers</span><span>Kubernetes / EKS</span></div>
-            <div class="stat"><span>Automation</span><span>IaC + CI/CD</span></div>
-            <div class="stat"><span>Certification</span><span>AWS Solutions Architect – Professional</span></div>
-          </aside>
-        </section>
+      <a class="btn" href="Anvesh_Reddy_Yeruva_Resume.pdf" target="_blank">📄 Download Resume</a>
+      <a class="btn" href="mailto:anvesh.yeruva@gmail.com">✉️ Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/yar-agfrewd/" target="_blank">🔗 LinkedIn</a>
+      <a class="btn" href="https://github.com/anveshyeruva" target="_blank">💻 GitHub</a>
+    </section>
 
-        <section class="grid" aria-label="Details">
-          <div class="card">
-            <h3>What I do</h3>
-            <p class="muted" style="margin:0;">
-              I build and operate cloud platforms that are reliable, secure, and easy to deploy.
-              I focus on Infrastructure as Code, CI/CD automation, and improving observability for production systems.
-            </p>
+    <section class="grid">
 
-            <ul class="list">
-              <li>CI/CD automation with Jenkins and GitHub Actions, including build, test, and release workflows</li>
-              <li>Infrastructure as Code using Terraform, plus CloudFormation and Azure Resource Manager templates</li>
-              <li>Kubernetes operations, troubleshooting, rollbacks, scaling, and deployment validation</li>
-              <li>AWS: VPC, EC2, IAM, S3, ALB/ELB, Auto Scaling, CloudWatch, CloudTrail, KMS</li>
-              <li>Azure: VM, VNet, NSG, Storage, Azure Monitor, Log Analytics, identity fundamentals</li>
-              <li>Production support: incident triage, root cause analysis, runbooks, and on-call readiness</li>
-            </ul>
-          </div>
+      <div class="card">
+        <h3>Platform Engineering & Cloud Architecture</h3>
+        <ul class="list">
+          <li>Design AWS environments using secure VPC segmentation and IAM least-privilege patterns</li>
+          <li>Operate Kubernetes clusters including RBAC, scheduling, rolling deployments, and troubleshooting</li>
+          <li>Build Infrastructure as Code using Terraform modules and drift reduction practices</li>
+          <li>Develop CI/CD pipelines with Jenkins and GitHub Actions</li>
+          <li>Implement monitoring and alerting to improve production reliability</li>
+        </ul>
+      </div>
 
-          <div class="card">
-            <h3>Security & reliability</h3>
-            <p class="muted" style="margin:0;">
-              Secure delivery and stable operations matter. I follow least-privilege patterns and apply practical security
-              controls in pipelines and production environments.
-            </p>
+      <div class="card">
+        <h3>Security & Reliability Focus</h3>
+        <ul class="list">
+          <li>Encryption using AWS KMS and audit logging with CloudTrail</li>
+          <li>Incident detection improvement through optimized dashboards</li>
+          <li>Runbook-driven production support and RCA practices</li>
+          <li>Linux system troubleshooting and operational stability</li>
+        </ul>
+      </div>
 
-            <ul class="list">
-              <li>IAM least privilege, secrets handling, encryption, and audit logging practices</li>
-              <li>Monitoring and alerting across infrastructure and application layers</li>
-              <li>RCA mindset: incidents → fixes → runbooks</li>
-              <li>Databases: Amazon Aurora and Oracle Database operational support and troubleshooting</li>
-            </ul>
-          </div>
+      <div class="card">
+        <h3>Certifications</h3>
 
-          <div class="card">
-            <h3>Certifications</h3>
-
-            <div class="certItem" aria-label="Certification item">
-              <div class="certTop">
-                <p class="certName">AWS Solutions Architect – Professional</p>
-                <a class="btn btnSmall" href="https://www.credly.com/badges/b47ba845-520a-493e-af03-5ddd982e7df5/linked_in_profile" target="_blank" rel="noopener">
-                  🏅 View Badge
-                </a>
-              </div>
-
-              <div class="certMeta" aria-label="Certification metadata">
-                <span class="pill">☁️ AWS</span>
-                <span class="pill">✅ Active</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Role targets</h3>
-            <p class="muted" style="margin:0;">
-              Roles where I can own reliability, automation, security, and scalable delivery.
-            </p>
-            <div class="chips">
-              <span class="chip">Senior DevOps Engineer</span>
-              <span class="chip">DevSecOps Engineer</span>
-              <span class="chip">Site Reliability Engineer</span>
-              <span class="chip">Cloud Engineer</span>
-              <span class="chip">Platform Engineer</span>
-            </div>
-          </div>
-
-          <div class="card projects">
-            <h3>Featured Projects</h3>
-            <p class="muted" style="margin:0;">
-              A few things I’m building and improving.
-            </p>
-
-            <div class="projGrid">
-              <a class="proj" href="https://github.com/anveshyeruva/mlops-qa-bugseverity" target="_blank" rel="noopener">
-                <p class="projTitle">MLOps QA Bug Severity</p>
-                <p class="projDesc">End-to-end ML pipeline with experiment tracking, automation, reproducible runs, and operational readiness checks.</p>
-                <div class="projTags" aria-label="Project tags">
-                  <span class="tag">Python</span>
-                  <span class="tag">MLflow</span>
-                  <span class="tag">CI/CD</span>
-                </div>
-              </a>
-
-              <a class="proj" href="https://github.com/anveshyeruva/flask-cicd-starter" target="_blank" rel="noopener">
-                <p class="projTitle">Flask CI/CD Starter</p>
-                <p class="projDesc">Starter kit for build, test, and deploy using containers, GitHub Actions, and repeatable CI automation.</p>
-                <div class="projTags" aria-label="Project tags">
-                  <span class="tag">Docker</span>
-                  <span class="tag">GitHub Actions</span>
-                  <span class="tag">Flask</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer" aria-label="Footer">
-        <div>© 2026 • Anvesh Reddy Yeruva</div>
-        <div class="links">
-          <a href="Anvesh_Reddy_Yeruva_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-          <a href="mailto:anvesh.yeruva@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/yar-agfrewd/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/anveshyeruva" target="_blank" rel="noopener">GitHub</a>
+        <div class="certItem">
+          <div class="certName">AWS Solutions Architect – Professional</div>
+          <a class="btn" href="https://www.credly.com/badges/b47ba845-520a-493e-af03-5ddd982e7df5/linked_in_profile" target="_blank">🏅 View Badge</a>
         </div>
-        <div class="muted">Build: profile-2026-02-02-v3</div>
-      </footer>
+
+        <div class="certItem">
+          <div class="certName">Certified Kubernetes Administrator (CKA)</div>
+          <a class="btn" href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/" target="_blank">🏅 Credential Info</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Target Roles</h3>
+        <ul class="list">
+          <li>Senior DevOps Engineer</li>
+          <li>Platform Engineer</li>
+          <li>Cloud Engineer</li>
+          <li>Site Reliability Engineer</li>
+          <li>DevSecOps Engineer</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <div class="footer">
+      <div>© 2026 • Anvesh Reddy Yeruva</div>
+      <div>Build: profile-2026-CKA-update</div>
     </div>
+
   </div>
+</div>
 </body>
 </html>
