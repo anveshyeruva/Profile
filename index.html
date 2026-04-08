@@ -1,18 +1,20 @@
-<!doctype html>
+from pathlib import Path
+
+updated_html = r'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<meta name="description" content="Anvesh Reddy Yeruva - Senior DevOps Engineer | AWS Certified Solutions Architect – Professional | Certified Kubernetes Administrator | Cloud Platform Engineering | Terraform | CI/CD | Observability | Security" />
+<meta name="description" content="Anvesh Reddy Yeruva - Senior Site Reliability Engineer | AWS Certified Solutions Architect – Professional | Certified Kubernetes Administrator | Multi-Cloud | Terraform | Kubernetes | Observability | Incident Response" />
 
-<meta property="og:title" content="Anvesh Reddy Yeruva | Senior DevOps Engineer" />
-<meta property="og:description" content="Senior DevOps Engineer | AWS SA Pro | CKA | Kubernetes | Terraform | CI/CD | Cloud Architecture" />
+<meta property="og:title" content="Anvesh Reddy Yeruva | Senior Site Reliability Engineer" />
+<meta property="og:description" content="Senior Site Reliability Engineer | AWS SA Pro | CKA | Multi-Cloud | Terraform | Kubernetes | Observability | Incident Response" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://anveshyeruva.github.io/Profile/" />
 <meta property="og:image" content="https://anveshyeruva.github.io/Profile/og.png?v=20260218" />
 
-<title>Anvesh Reddy Yeruva | Senior DevOps Engineer</title>
+<title>Anvesh Reddy Yeruva | Senior Site Reliability Engineer</title>
 
 <style>
 :root{
@@ -67,7 +69,6 @@ a:hover{opacity:0.85;}
   overflow:hidden;
 }
 
-/* HERO */
 .hero{
   padding:50px;
   border-bottom:1px solid var(--line);
@@ -93,11 +94,13 @@ a:hover{opacity:0.85;}
   font-size:18px;
   color:var(--muted);
   margin-bottom:15px;
+  line-height:1.6;
 }
 
 .archLine{
   color:var(--muted);
   margin-bottom:25px;
+  line-height:1.7;
 }
 
 .metaRow{
@@ -122,6 +125,7 @@ a:hover{opacity:0.85;}
   border:1px solid var(--line);
   background:rgba(255,255,255,0.05);
   margin-right:12px;
+  margin-bottom:10px;
   font-size:14px;
   color:var(--text);
   transition:0.25s ease;
@@ -133,7 +137,6 @@ a:hover{opacity:0.85;}
   border-color:var(--accent);
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(12,1fr);
@@ -161,9 +164,9 @@ a:hover{opacity:0.85;}
   padding-left:18px;
   line-height:1.7;
   font-size:15px;
+  margin:0;
 }
 
-/* CERTIFICATION BADGES */
 .certGrid{
   display:flex;
   gap:20px;
@@ -185,7 +188,6 @@ a:hover{opacity:0.85;}
   box-shadow:0 20px 50px rgba(0,0,0,0.5);
 }
 
-/* PROJECT */
 .project{
   border:1px solid var(--line);
   border-radius:18px;
@@ -200,7 +202,6 @@ a:hover{opacity:0.85;}
   box-shadow:0 30px 70px rgba(0,0,0,0.5);
 }
 
-/* FOOTER */
 .footer{
   padding:25px 50px;
   border-top:1px solid var(--line);
@@ -208,12 +209,15 @@ a:hover{opacity:0.85;}
   font-size:14px;
   display:flex;
   justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
 @media(max-width:900px){
   .card{grid-column:span 12;}
   .grid{padding:30px;}
   .hero{padding:35px;}
+  .name{font-size:34px;}
 }
 </style>
 </head>
@@ -221,7 +225,7 @@ a:hover{opacity:0.85;}
 <body>
 <div class="wrap">
 
-<div class="badge">🚀 Senior DevOps Engineer • AWS SA Pro • CKA</div>
+<div class="badge">🚀 Senior Site Reliability Engineer • Multi-Cloud • AWS SA Pro • CKA</div>
 
 <div class="container">
 
@@ -229,44 +233,66 @@ a:hover{opacity:0.85;}
 <h1 class="name">Anvesh Reddy Yeruva</h1>
 
 <p class="subtitle">
-Senior DevOps Engineer | AWS Certified Solutions Architect – Professional | Certified Kubernetes Administrator
+Senior Site Reliability Engineer | AWS Certified Solutions Architect – Professional | Certified Kubernetes Administrator
 </p>
 
 <p class="archLine">
-Designing resilient, secure, and scalable cloud systems with an architecture-first mindset.
+Building reliable, secure, and scalable production platforms across AWS, Azure, and GCP with strong depth in Terraform, Kubernetes, observability, incident response, and infrastructure automation.
 </p>
 
 <div class="metaRow">
-<span>AWS Architecture</span>
-<span>Kubernetes Operations</span>
-<span>Terraform Infrastructure as Code</span>
-<span>CI/CD Automation</span>
-<span>Reliability Engineering</span>
+<span>Multi-Cloud Platforms</span>
+<span>Site Reliability Engineering</span>
+<span>Terraform and CloudFormation</span>
+<span>Kubernetes and Containers</span>
+<span>Observability and Incident Response</span>
 </div>
 
 <a class="btn" href="Anvesh_Reddy_Yeruva_Resume.pdf" target="_blank">Download Resume</a>
 <a class="btn" href="mailto:anvesh.yeruva@gmail.com">Email</a>
 <a class="btn" href="https://www.linkedin.com/in/yar-agfrewd/" target="_blank">LinkedIn</a>
+<a class="btn" href="https://github.com/anveshyeruva" target="_blank">GitHub</a>
 </section>
 
 <section class="grid">
 
 <div class="card">
 <h3>Professional Summary</h3>
-<p style="color:var(--muted);">
-Senior DevOps Engineer with 7+ years of experience designing and operating production-grade AWS cloud platforms.
-Strong expertise in Kubernetes administration, Infrastructure as Code, CI/CD automation, observability, and secure architecture patterns.
+<p style="color:var(--muted); line-height:1.7; margin:0;">
+Senior Site Reliability and DevOps Engineer with 7+ years of experience supporting reliable production environments across AWS, Azure, and GCP. Strong expertise in Infrastructure as Code, Kubernetes operations, CI/CD automation, monitoring, alerting, incident response, root cause analysis, and secure cloud architecture.
 </p>
 </div>
 
 <div class="card">
 <h3>Core Expertise</h3>
 <ul class="list">
-<li>Secure VPC design and IAM least privilege models</li>
-<li>Kubernetes cluster lifecycle management and troubleshooting</li>
-<li>Reusable Terraform modules and drift control</li>
-<li>Deployment validation pipelines and rollback safety</li>
-<li>Monitoring, alerting, and incident response practices</li>
+<li>Multi-cloud infrastructure across AWS, Azure, and GCP</li>
+<li>Terraform, CloudFormation, reusable modules, and drift control</li>
+<li>Kubernetes operations, container platforms, and rollout safety</li>
+<li>Monitoring, alerting, observability, and incident response</li>
+<li>Cloud networking, IAM, secure access, and production reliability</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tools and Platforms</h3>
+<ul class="list">
+<li>Terraform, CloudFormation, Jenkins, GitHub Actions, Git</li>
+<li>Kubernetes, Helm, Docker, EKS, ECS, Fargate, AKS, GKE</li>
+<li>CloudWatch, Azure Monitor, Cloud Monitoring, Datadog, Sentry</li>
+<li>PagerDuty, Incident.io, runbooks, postmortems, root cause analysis</li>
+<li>Python, Bash, SQL, Linux administration, cloud security</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>What I Focus On</h3>
+<ul class="list">
+<li>Building resilient platforms with high availability and fault isolation</li>
+<li>Reducing manual work through automation and operational tooling</li>
+<li>Improving deployment safety with validation, rollback, and release controls</li>
+<li>Strengthening visibility with actionable monitoring and alert quality</li>
+<li>Driving durable fixes through incident follow-up and operational improvements</li>
 </ul>
 </div>
 
@@ -295,13 +321,13 @@ Hands-on Kubernetes certification demonstrating cluster operations, workload tro
 
 <div class="project">
 <strong>MLOps QA Bug Severity Classifier</strong><br>
-End-to-end ML workflow with reproducible training, experiment tracking, and CI validation.
+End-to-end machine learning workflow with reproducible training, experiment tracking, API-based inference, and CI validation for release readiness.
 <br><a href="https://github.com/anveshyeruva/mlops-qa-bugseverity" target="_blank">View Project</a>
 </div>
 
 <div class="project">
 <strong>Flask CI/CD Starter</strong><br>
-Containerized microservice with automated build, test, and deployment validation.
+Containerized service with automated testing, image builds, and deployment validation to support reliable delivery workflows.
 <br><a href="https://github.com/anveshyeruva/flask-cicd-starter" target="_blank">View Project</a>
 </div>
 
@@ -311,9 +337,15 @@ Containerized microservice with automated build, test, and deployment validation
 
 <div class="footer">
 <div>© 2026 • Anvesh Reddy Yeruva</div>
+<div>Built for cloud, platform, SRE, and DevOps roles</div>
 </div>
 
 </div>
 </div>
 </body>
 </html>
+'''
+
+out = Path('/mnt/data/index_harvey_updated.html')
+out.write_text(updated_html, encoding='utf-8')
+print(f"Saved updated file to {out}")
